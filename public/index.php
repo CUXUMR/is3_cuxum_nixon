@@ -6,6 +6,7 @@ use MVC\Router;
 use Controllers\AppController;
 use Controllers\ComandoController;
 use Controllers\GraficaController;
+use Controllers\LoginController;
 use Controllers\MapaController;
 use Controllers\OperacionesController;
 
@@ -32,7 +33,13 @@ $router->get('/mapa', [MapaController::class, 'index']);
 $router->get('/comando', [ComandoController::class, 'index']);
 $router->get('/API/comando/buscar', [ComandoController::class,'buscarComandoAPI']);
 
-
+//login
+// $router->get('/', [LoginController::class, 'login']);
+// $router->get('/logout', [LoginController::class, 'logout']);
+// $router->get('/menu', [LoginController::class, 'menu']);
+// $router->get('/registro', [LoginController::class, 'registro']);
+// $router->post('/API/registro', [LoginController::class, 'registroAPI']);
+// $router->post('/API/login', [LoginController::class, 'loginAPI']);
 
 
 
