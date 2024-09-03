@@ -4,6 +4,7 @@ require_once __DIR__ . '/../includes/app.php';
 
 use MVC\Router;
 use Controllers\AppController;
+use Controllers\ComandoController;
 use Controllers\GraficaController;
 use Controllers\MapaController;
 use Controllers\OperacionesController;
@@ -26,6 +27,10 @@ $router->get('/API/grafica/index', [GraficaController::class, 'estadisticaAPI'])
 //mapa
 
 $router->get('/mapa', [MapaController::class, 'index']);
+
+//comando alfa
+$router->get('/comando', [ComandoController::class, 'index']);
+$router->get('/API/comando/buscar', [ComandoController::class,'buscarComandoAPI']);
 
 
 

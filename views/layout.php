@@ -44,6 +44,12 @@
                             <li>
                                 <a class="dropdown-item nav-link text-white " href="/is3_cuxum_nixon/mapa"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Mapa de Operaciones</a>
                             </li>
+                            <li>
+                                <a class="dropdown-item nav-link text-white " href="/is3_cuxum_nixon/comando"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>operaciones del comando alfa</a>
+                            </li>
+
+                            
+
                         
                         
                     

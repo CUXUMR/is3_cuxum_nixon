@@ -41,6 +41,30 @@ class Operaciones extends ActiveRecord
         return self::fetchArray($sql);
     }
 
+     
+    public static function obtenerComandoconQuery()
+    {
+        $sql = "SELECT 
+    c.com_nombre AS comando,
+    o.ope_nombre,
+    o.ope_fecha_operacion,
+    o.ope_origen_lat AS origen_latitud,
+    o.ope_origen_lon AS origen_longitud,
+    o.ope_destino_lat AS destino_latitud,
+    o.ope_destino_lon AS destino_longitud,
+    e.est_descripcion AS ope_estado
+FROM 
+    operaciones o
+JOIN 
+    comandos c ON o.ope_comando = c.com_codigo
+JOIN 
+    estado_operacion e ON o.ope_estado = e.est_codigo
+WHERE 
+    c.com_nombre = 'Comando Alfa';";
+        return self::fetchArray($sql);
+    }
+
+
 
     
 }
