@@ -35,6 +35,27 @@ CREATE TABLE estado_operacion (
     PRIMARY KEY (est_codigo)
 );
 
+CREATE TABLE usuario (
+    usu_id serial, 
+    usu_nombre VARCHAR(50) NOT NULL,
+    usu_catalogo VARCHAR(50) NOT NULL,
+    usu_password VARCHAR(50) NOT NULL,
+    usu_situacion smallint default 1,
+    PRIMARY KEY (usu_id)
+);
+
+CREATE TABLE permiso (
+    permiso_id serial, 
+    permiso_usuario VARCHAR(50) NOT NULL,
+    permiso_rol VARCHAR(50) NOT NULL,
+    permiso_situacion smallint default 1,
+    PRIMARY KEY (permiso_id)
+);
+
+insert into usuario (usu_nombre, usu_catalogo, usu_password ) values ('ABNER FUENTES', 623041, '$2y$10$Nz6/ESQw7b7xW1Q2j.WEM.g5LQ/NSSmHnhZpfolFAH.ltD0GGRKGS');
+
+insert into permiso (permiso_usuario, permiso_rol) values (1, 1);
+
 select * from comandos
 INSERT INTO comandos (com_nombre) VALUES ('Comando Alfa');
 INSERT INTO comandos (com_nombre) VALUES ('Comando Bravo');
@@ -90,4 +111,6 @@ JOIN
     estado_operacion e ON o.ope_estado = e.est_codigo
 WHERE 
     c.com_nombre = 'Comando Alfa';
+
+
 
