@@ -2,13 +2,13 @@ import L from 'leaflet';
 
 const map = L.map('map', {
     center: [14.71889, -90.64417],
-    zoom: 7,
+    zoom: 1,
     layers: []
 });
 
 // Añadir 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 1,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
