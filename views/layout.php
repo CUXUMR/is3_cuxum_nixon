@@ -34,8 +34,17 @@
                         <ul class="dropdown-menu  dropdown-menu-dark "id="dropwdownRevision" style="margin: 0;">
                             <!-- <h6 class="dropdown-header">Información</h6> -->
                             <li>
-                                <a class="dropdown-item nav-link text-white " href="/aplicaciones/nueva"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Subitem</a>
+                                <a class="dropdown-item nav-link text-white " href="/is3_cuxum_nixon/operaciones"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Operaciones</a>
                             </li>
+
+                            <li>
+                                <a class="dropdown-item nav-link text-white " href="/is3_cuxum_nixon/grafica"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Grafica de Operaciones </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item nav-link text-white " href="/is3_cuxum_nixon/mapa"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Mapa de Operaciones</a>
+                            </li>
+                        
                         
                     
                         
